@@ -1,5 +1,5 @@
 """
-WSGI config for Python_zx project.
+WSGI config for python_hello_world project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Python_zx.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'python_hello_world.settings')
 
 application = get_wsgi_application()
