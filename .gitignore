@@ -1,5 +1,12 @@
 ### Python ###
-__pycache__/
 .env
-db.sqlite3
 .python-version
+
+
+
+### Django ###
+*.log
+*.pot
+*.pyc
+__pycache__/
+db.sqlite3
