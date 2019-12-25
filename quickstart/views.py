@@ -3,9 +3,9 @@ from django.shortcuts import render
 # Create your views here.
 
 
-from quickstart.models import User
+from quickstart.models import User, Test
 from rest_framework import viewsets
-from quickstart.serializers import UserSerializer
+from quickstart.serializers import UserSerializer, TestSerializer
 
 
 class UserViewSet(viewsets.ModelViewSet):
@@ -16,9 +16,6 @@ class UserViewSet(viewsets.ModelViewSet):
     serializer_class = UserSerializer
 
 
-# class GroupViewSet(viewsets.ModelViewSet):
-#     """
-#     允许组查看或编辑的API路径。
-#     """
-#     queryset = Group.objects.all()
-#     serializer_class = GroupSerializer
+class TestViewSet(viewsets.ModelViewSet):
+    queryset = Test.objects.all()
+    serializer_class = TestSerializer

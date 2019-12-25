@@ -11,3 +11,8 @@ class User(models.Model):
     password = models.CharField(
         max_length=50, blank=False, default='123')
     created = models.DateTimeField(auto_now_add=True)
+
+
+class Test(models.Model):
+    id = models.AutoField(primary_key=True)
+    content = models.CharField(max_length=240, default='')
